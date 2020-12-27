@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".features.home.ui.GifDetailsFragment">
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/gif_full"
+        app:layout_constraintEnd_toEndOf="@+id/gif_full"
+        app:layout_constraintStart_toStartOf="@id/gif_full"
+        app:layout_constraintTop_toTopOf="@+id/gif_full"></ProgressBar>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/gif_full"
+        ></pl.droidsonroids.gif.GifImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.trainmanscreeningproject.features.home.ui.HomeFragment"
+        android:label="Gifs"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_gifDetailsFragment"
+            app:destination="@id/gifDetailsFragment" >
+        </action>>
+    </fragment>
+    <fragment
+        android:id="@+id/gifDetailsFragment"
+        android:name="com.example.trainmanscreeningproject.features.home.ui.GifDetailsFragment"
+        android:label="Gif Details"
+        tools:layout="@layout/fragment_gif_details" >
+    </fragment>
+</navigation>
